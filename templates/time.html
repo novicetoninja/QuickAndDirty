@@ -1,0 +1,17 @@
+<!doctype  html>
+<head>
+    <title>Peanut Butter Jelly Time!</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align:center">
+            {{current_time}}
+        </h1>
+        <h2 style="text-align:center">
+            {% for word in current_time.split(' ') %}
+            <p>{{ word }}</p>
+            {% endfor %}
+        </h2>
+    </div>
+</body>
+</html>
